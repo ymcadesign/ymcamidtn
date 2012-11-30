@@ -1,0 +1,87 @@
+/********************************************/
+/* THESE ARE THE CLASSES THAT CONTROL 
+THE TYPE OF BUTTONS THROUGHOUT */
+/********************************************/
+@twenty: 20px;
+
+@fourty: 40px;
+
+@sixty: 60px;
+
+@eighty: 80px;
+
+.button {
+	width:auto;
+	border:none;
+	display:inline-block;
+	font-size:14px;
+	line-height: 1;
+	margin:0;
+	outline:none;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;	
+}
+
+.smallpadding {
+	padding: 10px @twenty 11px;
+}
+
+.mediumpadding {
+	padding: 10px @fourty 11px;
+}
+
+.largepadding {
+	padding: 10px @eighty 11px;
+
+}
+
+
+.smallbutton {
+	.button;
+	.smallpadding;
+
+}
+
+.mediumbutton {
+	.button;
+	padding: 10px @fourty 11px;
+
+}
+
+.largebutton {
+	.button;
+	padding: 10px @eighty 11px;
+
+}
+/********************************************/
+/********************************************/
+/********************************************/
+
+
+/********************************************/
+/* THESE ARE THE CLASSES THAT CONTROL 
+THE IMAGES THROUGHOUT OUR SITE */
+/********************************************/
+
+.rounded-corners (@radius:4px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+	
+}
+.smallrounded {
+	.rounded-corners;
+}
+
+.mediumrounded {
+	.rounded-corners(6px);
+}
+
+.largerounded {
+	.rounded-corners(10px);
+}
+/********************************************/
+/********************************************/
+/********************************************/
